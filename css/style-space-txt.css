@@ -1,72 +1,113 @@
 /* text */
 h1{
-    font-size: 4em;
-}
-h2{
     font-size: 3.5em;
 }
+h2{
+    font-size: 2.5em;
+    color: var(--color-secondary);
+}
 h3{
-    font-size: 3em;
+    font-size: 2em;
 }
 h4{
-    font-size: 2.5em;
+    font-size: 1.8em;
 }
 h5{
     font-size: 1.5em;
 }
 h6{
-    font-size: 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--color-subtitle);
 }
 p{
     font-size: 1em;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: var(--color-secondary);
 }
 .title{
-    font-size: 1px;
-    font-weight: 900;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .subtitle{
-    font-size: 2px;
-    font-weight: 100;
-    color: grey;
+    font-weight: 600;
+    color: var(--color-secondary);
+    text-transform: capitalize;
+}
+.subtitle-small{
+    font-weight: 500;
+    color: var(--color-subtitle);
+    text-transform: capitalize;
+}
+.text-center{
+    text-align: center;
 }
 
 /* margin */
 .margin{
     margin: 40px;
 }
+.bigger-margin{
+    margin: 60px;
+}
 .margin-t{
     margin-top: 20px;
+}
+.bigger-margin-t{
+    margin-top: 40px;
 }
 .margin-b{
     margin-bottom: 20px;
 }
+.bigger-margin-b{
+    margin-bottom: 40px;
+}
 .margin-r{
     margin-right: 20px;
 }
+.bigger-margin-r{
+    margin-right: 40px;
+}
 .margin-l{
     margin-left: 20px;
+}
+.bigger-margin-l{
+    margin-left: 40px;
 }
 
 /* padding */
 
 .padding{
-    padding: 30px;
+    padding: 40px;
+}
+.bigger-padding{
+    padding: 60px;
 }
 .padding-t{
-    padding-top: 30px;
+    padding-top: 20px;
+}
+.bigger-padding-t{
+    padding-top: 40px;
 }
 .padding-b{
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+}
+.bigger-padding-b{
+    padding-bottom: 40px;
 }
 .padding-r{
-    padding-right: 30px;
+    padding-right: 20px;
+}
+.bigger-padding-r{
+    padding-right: 40px;
 }
 .padding-l{
-    padding-left: 30px;
+    padding-left: 20px;
+}
+.bigger-padding-l{
+    padding-left: 40px;
 }
 
 /* ******************** */

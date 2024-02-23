@@ -7,7 +7,9 @@
 ul{
     list-style: none;
 }
-
+img{
+    width: 100%;
+}
 /* general */
 :root {
 	--color-primary: #000000;
@@ -15,6 +17,7 @@ ul{
 	--color-toolbar: #282828;
 	--color-secondary: #fdfdfd;
     --color-header: #00000070;
+    --color-subtitle: #7E8084;
 }
 
 body{
@@ -26,23 +29,59 @@ body{
     background-color: var(--color-main);
 }
 #content{
-    height: calc(100vh - 150px);
+    height: calc(100vh - 125px);
+    width: 100%;
 }
 #toolbar{
-    height: 150px;
+    height: 125px;
     background-color: var(--color-toolbar);
 }
 #sidebar{
-    width: 500px;
+    width: 300px;
     background-color: var(--color-primary);
     height: 100%;
 }
+main{
+    height: 100%;
+    width: calc(100% - 300px);
+    overflow: auto;
+}
 header{
-    height: 150px;
+    height: 125px;
     width: 100%;
     z-index: 2000;
     background-color: var(--color-header);
     position: fixed;
     top: 0;
-    left: 500px;
+    left: 0;
+}
+.button{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 15px 70px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 40px;
+}
+.container{
+    margin-top: 125px;
+}
+nav ul li a{
+    color: var(--color-subtitle);
+}
+
+.gapped{
+    gap: 20px;
+}
+
+.album{
+    width: calc(100% / 6 - 20px);
+    min-width: 200px;
+}
+
+.cover{
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+.circle{
+    border-radius: 50%;
 }
