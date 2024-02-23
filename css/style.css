@@ -9,6 +9,40 @@ ul{
 }
 
 /* general */
+:root {
+	--color-primary: #000000;
+	--color-main: #141922;
+	--color-toolbar: #282828;
+	--color-secondary: #fdfdfd;
+    --color-header: #00000070;
+}
+
 body{
-    
+    font-family: "Montserrat", sans-serif;
+}
+
+#wrapper{
+    height: 100vh;
+    background-color: var(--color-main);
+}
+#content{
+    height: calc(100vh - 150px);
+}
+#toolbar{
+    height: 150px;
+    background-color: var(--color-toolbar);
+}
+#sidebar{
+    width: 500px;
+    background-color: var(--color-primary);
+    height: 100%;
+}
+header{
+    height: 150px;
+    width: 100%;
+    z-index: 2000;
+    background-color: var(--color-header);
+    position: fixed;
+    top: 0;
+    left: 500px;
 }
