@@ -10,6 +10,7 @@ ul{
 img{
     width: 100%;
 }
+
 /* general */
 :root {
 	--color-primary: #000000;
@@ -18,6 +19,9 @@ img{
 	--color-secondary: #fdfdfd;
     --color-header: #00000070;
     --color-subtitle: #7E8084;
+}
+span{
+    cursor: pointer;
 }
 
 body{
@@ -36,11 +40,57 @@ body{
     height: 125px;
     background-color: var(--color-toolbar);
 }
+/* SIDEBAR */
 #sidebar{
     width: 300px;
     background-color: var(--color-primary);
     height: 100%;
 }
+.logo{
+    max-width: 200px;
+    min-height: 125px;
+}
+.logo-mobile{
+    display: none;
+}
+.home, .playlist {
+    max-width: 200px;
+}
+.icons{
+    width: 2em;
+}
+span.subtitle-small{
+    line-height: 2em;
+    vertical-align: middle;
+}
+.box{
+    background-color: var(--color-subtitle);
+    font-size: 2em;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    height: 40px;
+}
+.fa-circle-arrow-down{
+    color: var(--color-subtitle);
+}
+hr{
+    width: 80%
+}
+.sidebar{
+    flex-grow: 1;
+}
+.sidebar .playlist{
+    min-height: 0;
+}
+.sidebar .playlist ul{
+    height: 200px;
+    overflow: auto;
+}
+/* ****************************** */
+
+/* MAIN */
 main{
     height: 100%;
     width: calc(100% - 300px);
@@ -48,12 +98,12 @@ main{
 }
 header{
     height: 125px;
-    width: 100%;
+    width: calc(100% - 300px);
     z-index: 2000;
     background-color: var(--color-header);
     position: fixed;
     top: 0;
-    left: 0;
+    left: 300px;
 }
 .button{
     display: inline-block;
@@ -84,4 +134,15 @@ nav ul li a{
 }
 .circle{
     border-radius: 50%;
+}
+
+/* toolbar */
+.toolbar-left{
+    width: 20%;
+}
+.toolbar-center{
+    flex-grow: 1;
+}
+.toolbar-right{
+    width: 20%;
 }

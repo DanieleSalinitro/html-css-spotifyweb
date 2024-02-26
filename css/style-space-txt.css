@@ -44,13 +44,22 @@ a{
 .text-center{
     text-align: center;
 }
-
+.uppercase{
+    text-transform: uppercase;
+}
 /* margin */
+.smaller-margin{
+    margin: 20px;
+}
 .margin{
     margin: 40px;
 }
 .bigger-margin{
     margin: 60px;
+}
+
+.smaller-margin-t{
+    margin-top: 10px;
 }
 .margin-t{
     margin-top: 20px;
@@ -58,17 +67,29 @@ a{
 .bigger-margin-t{
     margin-top: 40px;
 }
+
+.smaller-margin-b{
+    margin-bottom: 10px;
+}
 .margin-b{
     margin-bottom: 20px;
 }
 .bigger-margin-b{
     margin-bottom: 40px;
 }
+
+.smaller-margin-r{
+    margin-right: 10px;
+}
 .margin-r{
     margin-right: 20px;
 }
 .bigger-margin-r{
     margin-right: 40px;
+}
+
+.smaller-margin-l{
+    margin-left: 10px;
 }
 .margin-l{
     margin-left: 20px;
@@ -78,12 +99,18 @@ a{
 }
 
 /* padding */
-
+.smaller-padding{
+    padding: 20px;
+}
 .padding{
     padding: 40px;
 }
 .bigger-padding{
     padding: 60px;
+}
+
+.smaller-padding-t{
+    padding-top: 10px;
 }
 .padding-t{
     padding-top: 20px;
@@ -91,11 +118,19 @@ a{
 .bigger-padding-t{
     padding-top: 40px;
 }
+
+.smaller-padding-b{
+    padding-bottom: 10px;
+}
 .padding-b{
     padding-bottom: 20px;
 }
 .bigger-padding-b{
     padding-bottom: 40px;
+}
+
+.smaller-padding-r{
+    padding-right: 10px;
 }
 .padding-r{
     padding-right: 20px;
@@ -103,11 +138,14 @@ a{
 .bigger-padding-r{
     padding-right: 40px;
 }
+
+.smaller-padding-l{
+    padding-left: 10px;
+}
 .padding-l{
     padding-left: 20px;
 }
 .bigger-padding-l{
     padding-left: 40px;
 }
-
 /* ******************** */
