@@ -50,7 +50,7 @@ body{
 }
 .logo{
     max-width: 200px;
-    min-height: 125px;
+    height: 125px;
 }
 .logo-mobile{
     display: none;
@@ -128,12 +128,12 @@ nav ul li a{
 }
 
 .gapped{
-    gap: 20px;
+    gap: 15px;
 }
 
 .album{
-    width: calc(100% / 6 - 20px);
-    min-width: 200px;
+    width: calc(100% / 6 - 15px);
+    min-width: 100px;
 }
 
 .cover{
@@ -155,7 +155,7 @@ nav ul li a{
     padding: 0;
 }
 .toolbar-left{
-    width: 300px;
+    min-width: 300px;
 }
 #toolbar .cover{
     width: 100px;
@@ -166,20 +166,21 @@ nav ul li a{
     flex-grow: 1;
 }
 .player{
-    width: 350px;
+    width: 300px;
     font-size: 35px;
 }
 .player .fa-circle-play{
     font-size: 50px;
 }
 .player-bar{
-    width: 600px;
+    width: 480px;
     border: 2px solid #cccccc7e;
     border-radius: 5px;
 }
 
 .toolbar-right{
     width: 20%;
+    min-width: 300px;
     font-size: 20px
 }
 .volume{

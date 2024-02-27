@@ -1,0 +1,97 @@
+/* 1400 - 1200 - 992 - 768 - 576 */
+
+@media screen and (max-width: 1200px) {
+    .album{
+        width: calc(100% / 4 - 15px);
+    }
+    .volume{
+        width: 75px;
+    }
+    .player-bar {
+        width: 240px;
+    }
+}
+@media screen and (max-width: 992px){
+    nav .smaller-padding-b{
+        padding-bottom: 40px;
+    }
+    .album{
+        width: calc(100% / 2 - 15px);
+    }
+    .player-bar {
+        width: 130px;
+    }
+    .player{
+        font-size: 30px;
+        width: 200px;
+    }
+    .toolbar-right {
+        min-width: 250px;
+    }
+    .toolbar-left {
+        min-width: 270px;
+    }
+    .favourite{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px){
+    #sidebar hr, 
+    #sidebar span.subtitle, 
+    #sidebar span.subtitle-small, 
+    #sidebar .playlist, 
+    .logo-desktop {
+        display: none;
+    }
+    #sidebar{
+        width: 80px;
+    }
+    header{
+        width: calc(100% - 80px);
+        left: 80px;
+    }
+    main{
+        width: calc(100% - 80px);
+    }
+    .logo-mobile{
+        display: block;
+        width: 2em ;
+        height: auto;
+    }
+    .logo{
+        height: 3em;
+    }
+    .fa-circle-arrow-down{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    #toolbar .cover {
+        width: 30px;
+    }
+    .toolbar-left p{
+        font-size: 0.8em;
+    }
+    .toolbar-left {
+        min-width: 170px;
+    }
+    .toolbar-right {
+        min-width: 200px;
+    }
+    .player .fa-circle-play {
+        font-size: 30px;
+    }
+    .player {
+        font-size: 20px;
+        width: 135px;
+    }
+    .player-bar {
+        width: 65px;
+    }
+    .volume{
+        width: 50px;
+    }
+    .toolbar-right {
+        min-width: 155px;
+        font-size: 15px;
+    }
+}
