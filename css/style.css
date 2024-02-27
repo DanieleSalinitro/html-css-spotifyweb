@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 ul{
     list-style: none;
@@ -35,6 +36,7 @@ body{
 #content{
     height: calc(100vh - 125px);
     width: 100%;
+    overflow: hidden;
 }
 #toolbar{
     height: 125px;
@@ -44,7 +46,7 @@ body{
 #sidebar{
     width: 300px;
     background-color: var(--color-primary);
-    height: 100%;
+    overflow: hidden;
 }
 .logo{
     max-width: 200px;
@@ -62,6 +64,12 @@ body{
 span.subtitle-small{
     line-height: 2em;
     vertical-align: middle;
+}
+.bigger-sidebar{
+    min-height: 300px;
+}
+.smaller-sidebar{
+    background: var(--color-primary);
 }
 .box{
     background-color: var(--color-subtitle);
@@ -85,8 +93,8 @@ hr{
     min-height: 0;
 }
 .sidebar .playlist ul{
-    height: 200px;
-    overflow: auto;
+    min-height: 400px;
+    overflow-y: scroll;
 }
 /* ****************************** */
 
@@ -142,12 +150,41 @@ nav ul li a{
 #toolbar{
     color: var(--color-secondary);
 }
+#toolbar *{
+    margin: 0;
+    padding: 0;
+}
 .toolbar-left{
     width: 300px;
 }
+#toolbar .cover{
+    width: 100px;
+}
+
+
 .toolbar-center{
     flex-grow: 1;
 }
+.player{
+    width: 350px;
+    font-size: 35px;
+}
+.player .fa-circle-play{
+    font-size: 50px;
+}
+.player-bar{
+    width: 600px;
+    border: 2px solid #cccccc7e;
+    border-radius: 5px;
+}
+
 .toolbar-right{
     width: 20%;
+    font-size: 20px
+}
+.volume{
+    width: 150px;
+    border: 2px solid #cccccc7e;
+    border-radius: 5px;
+
 }

@@ -21,6 +21,10 @@
 .jc-end{
     justify-content: flex-end;
 }
+
+.jc-space-evenly{
+    justify-content: space-evenly;
+}
 /* *************************** */
 
 /* flex wrap */
