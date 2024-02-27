@@ -50,7 +50,7 @@ body{
 }
 .logo{
     max-width: 200px;
-    height: 125px;
+    min-height: 125px;
 }
 .logo-mobile{
     display: none;
